@@ -7,14 +7,15 @@ body {
     align-items: center;
     #app {
         display: flex;
+        position: relative;
         background-color: #1c1e1f;
-        width: 75vw;
+        max-width: 80vw;
         height: 85vh;
         @media all and (max-width: 1400px) {
-            height: 75vh;
+            min-width: 85vw;
         }
         @media all and (max-width: 992px) {
-            width: 80vw;
+            width: 85vw;
             height: 85vh;
         }
         @media all and (max-width: 768px) {
@@ -24,6 +25,62 @@ body {
         @media all and (max-width: 576px) {
             width: 100vw;
             height: 100vh;
+        }
+        .main{
+            margin-left: 480px;
+            padding: 30px;
+            overflow-y: scroll;
+            scrollbar-width: thin;
+            scrollbar-color: #3c3e3f #1c1e1f;
+            &::before{
+                content: '';
+                left: 540px;
+                right: 0;
+                top:0;
+                height: 40px;
+                position: absolute;
+                display: block;
+                z-index: 3;
+                background-image: linear-gradient(to bottom, #1c1e1f 45%, #1c1e1f 23%, transparent 100%);
+                @media all and (max-width: 1400px) {
+                    left: 420px;
+                }
+                @media all and (max-width: 1200px) {
+                    left: 330px;
+                }
+                @media all and (max-width: 768px) {
+                    left: 60px;
+                }
+            }
+            &::after{
+                content: '';
+                left: 540px;
+                right: 0;
+                bottom:0;
+                height: 40px;
+                position: absolute;
+                display: block;
+                z-index: 3;
+                background-image: linear-gradient(to top, #1c1e1f 45%, #1c1e1f 23%, transparent 100%);
+                @media all and (max-width: 1400px) {
+                    left: 420px;
+                }
+                @media all and (max-width: 1200px) {
+                    left: 330px;
+                }
+                @media all and (max-width: 768px) {
+                    left: 60px;
+                }
+            }
+            @media all and (max-width: 1400px) {
+                margin-left: 360px;
+            }
+            @media all and (max-width: 1200px) {
+                margin-left: 270px;
+            }
+            @media all and (max-width: 768px) {
+                margin-left: 0;
+            }
         }
     }
 }

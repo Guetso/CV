@@ -1,0 +1,24 @@
+.home {
+    &__title {
+        color: white;
+        font-family: "robotobold", Arial, Helvetica, sans-serif;
+        font-size: 45px;
+    }
+    &__aside {
+        color: #04b176;
+        font-family: "robotomedium_italic", Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        span {
+            color: #3c3e3f;
+            margin: 0 0.5rem 0 0.5rem;
+            font-weight: bold;
+        }
+    }
+    &__content {
+        color: #888888;
+        font-family: "robotoregular", Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        line-height: 25.95px;
+        text-align: left;
+    }
+}

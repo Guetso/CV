@@ -2,13 +2,13 @@
   <div id="app">
     <Nav></Nav>
     <Picture></Picture>
-    <router-view />
-
+    <article class="main">
+      <router-view />
+    </article>
   </div>
 </template>
 
 <script>
-
 import Nav from '@/components/Nav.vue' // @ is an alias to /src
 import Picture from '@/components/Picture.vue'
 

@@ -1,0 +1,16 @@
+.picCard {
+    &__info {
+        font-family: "robotobold", Arial, Helvetica, sans-serif;
+        h2 {
+            color: white;
+            font-size: 54px;
+            @media all and (max-width: 992px) {
+               font-size: 48px;
+            }
+        }
+        div {
+            color: #04b176;
+            font-size: 18px;
+        }
+    }
+}

@@ -3,9 +3,16 @@
     flex-direction: column;
     justify-content: space-between;
     width: 70px;
+    @media all and (max-width: 768px) {
+        width: 50px;
+        border-right: solid #3c3e3f 1px;
+    }
     &__upBtn,
     &__downBtn {
         height: 70px;
+        @media all and (max-width: 768px) {
+            height: 50px;
+        }
     }
     &__upBtn {
         background-color: #04b176;
