@@ -1,0 +1,19 @@
+.circle-cursor {
+    position: fixed;
+    border-radius: 50%;
+    &--inner{
+        width: 5px;
+        height: 5px;
+        left: -2.5px;
+        top: -2.5px;
+        z-index: 11000;
+        background-color: #04b176;
+    }
+    &--outer{
+        width: 30px;
+        height: 30px;
+        border: 1px solid #04b176;
+        z-index: 11000;
+        background-color: transparent;
+    }
+}
