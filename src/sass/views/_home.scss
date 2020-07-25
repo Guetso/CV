@@ -1,6 +1,21 @@
-.home{
-    &__title{
-        margin-top: 0;
-        margin-bottom: 25px;
+.home {
+    &__header {
+        position: relative;
+        padding-bottom: 2rem;
+    
+        &__title {
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background-color: white;
+            opacity: 0.09;
+        }
     }
 }
