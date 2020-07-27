@@ -10,7 +10,7 @@
       </aside>
 
       <p class="home__header__content">
-        Suite à une formation en marketing, puis en gestion et comptabilité, je fus embauché en tant que collaborateur comptable au sein d'un cabinet d'expertise comptable. Après plusieurs années à ce poste j'ai souhaité me reconvertir et revenir à mes premières aspirations : l'informatique et le web.
+        Suite à une formation en marketing, puis en gestion et comptabilité, j'ai travaillé en tant que collaborateur comptable au sein d'un cabinet d'expertise Quimpér. Après plusieurs années à ce poste j'ai souhaité me reconvertir et revenir à mes premières aspirations : l'informatique et le web.
         <br />J'ai validé avec succès la formation
         <em>"Développeur Web"</em> dispensée par le site de formation en ligne OpenClassrooms, et me lance aujourd'hui en tant que développeur web freelance.
         <br />Fort de mes compétences en développement, couplées à mes connaissances du monde de l'entreprise je suis capable d'offrir des solutions adaptées aux besoins de mes clients.
