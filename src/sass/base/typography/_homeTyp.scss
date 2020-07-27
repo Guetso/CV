@@ -23,4 +23,23 @@
             text-align: left;
         }
     }
+    &__skills {
+        &__title {
+            font-size: 36px;
+            font-family: "robotobold", Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        .container {
+            .skill {
+                &__title {
+                    color: white;
+                    font-family: "robotoregular", Arial, Helvetica, sans-serif;
+                }
+                &__content {
+                    color: #888888;
+                    font-family: "robotoregular", Arial, Helvetica, sans-serif;
+                }
+            }
+        }
+    }
 }

@@ -2,9 +2,11 @@
   <div id="app">
     <Nav></Nav>
     <Picture></Picture>
-    <article class="main">
-      <router-view />
-    </article>
+    <transition name="slither" mode="out-in">
+      <section class="main" :key="$route.name">
+        <router-view />
+      </section>
+    </transition>
   </div>
 </template>
 

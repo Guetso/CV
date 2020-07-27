@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 70px;
+    background-color: #1c1e1f;
     @media all and (max-width: 768px) {
         width: 50px;
         border-right: solid #3c3e3f 1px;
@@ -58,6 +59,16 @@
         margin: 1rem;
         color: #bfbfbf;
         transition: color 200ms;
+        svg {
+            transition: 200ms;
+        }
+        &--isActive {
+            color:#04b176;
+            svg {
+                width: 35px;
+                height: 35px;
+            }
+        }
         &:hover{
             color: #04b176;
         }

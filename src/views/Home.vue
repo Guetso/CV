@@ -19,16 +19,17 @@
 
     <section class="home__skills">
       <h2 class="home__skills__title">compétences</h2>
-
-      <article class="skill" v-for="skill in skills" :key="skill.name">
-        <header class="skill__header">
-          <icon-base :width="25" :height="25" :icon-name="skill.name">
-            <component :is="skill.header" />
-          </icon-base>
-        </header>
-        <h3 class="skill__title">{{skill.name}}</h3>
-        <p class="skill_content">{{skill.content}}</p>
-      </article>
+      <div class="container">
+        <article class="skill" v-for="skill in skills" :key="skill.name">
+          <header class="skill__header">
+            <icon-base :width="30" :height="30" :icon-name="skill.name">
+              <component :is="skill.header" />
+            </icon-base>
+          </header>
+          <h3 class="skill__title">{{skill.name}}</h3>
+          <p class="skill__content">{{skill.content}}</p>
+        </article>
+      </div>
     </section>
   </div>
 </template>
@@ -65,13 +66,13 @@ export default {
         },
         {
           header: 'iconDb',
-          name: 'développement',
+          name: 'base de données',
           content:
             'Building a custom tailored solution based on your technical specification.'
         },
         {
           header: 'iconSecu',
-          name: 'Protection des données',
+          name: 'protection des données',
           content:
             'Strategy with leading data protection technology to safeguard your critical data.'
         }

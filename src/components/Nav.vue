@@ -7,11 +7,11 @@
     </div>
     <nav>
       <ul class="navBar__items">
-        <li class="navBar__item" v-for="item in $router.options.routes" :key="item.meta.icon.name">
-          <icon-base :width="item.meta.icon.width || 30 " :height="item.meta.icon.height || 30" :icon-name="item.meta.icon.name">
+        <router-link tag="li" class="navBar__item" exact-active-class="navBar__item--isActive" :to="{ name: item.name }" v-for="item in $router.options.routes" :key="item.meta.icon.name">
+          <icon-base width= "30" height="30" :icon-name="item.meta.icon.name">
             <component :is="item.meta.icon.component" />
           </icon-base>
-        </li>
+        </router-link>
       </ul>
     </nav>
     <button class="navBar__downBtn">

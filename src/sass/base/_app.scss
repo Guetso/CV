@@ -5,12 +5,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    a {
+        color: inherit;
+    }
     #app {
         display: flex;
         position: relative;
-        background-color: #1c1e1f;
-        max-width: 75vw;
+        max-width: 65vw;
         height: 85vh;
+        transition: ease-in-out 200ms;
         @media all and (max-width: 1400px) {
             min-width: 85vw;
         }
@@ -26,17 +29,22 @@ body {
             width: 100vw;
             height: 100vh;
         }
-        .main{
-            margin-left: 480px;
-            padding: 30px;
+        .main {
+            margin-left: 470px;
+            padding: 1rem;
             overflow-y: scroll;
             scrollbar-width: thin;
             scrollbar-color: #3c3e3f #1c1e1f;
-            &::before{
-                content: '';
+            background-color: #1c1e1f;
+            transition: ease-in-out 200ms;
+            div{
+                opacity:1;
+            }
+            &::before {
+                content: "";
                 left: 540px;
                 right: 0;
-                top:0;
+                top: 0;
                 height: 40px;
                 position: absolute;
                 display: block;
@@ -52,11 +60,11 @@ body {
                     left: 60px;
                 }
             }
-            &::after{
-                content: '';
+            &::after {
+                content: "";
                 left: 540px;
                 right: 0;
-                bottom:0;
+                bottom: 0;
                 height: 40px;
                 position: absolute;
                 display: block;
@@ -73,13 +81,33 @@ body {
                 }
             }
             @media all and (max-width: 1400px) {
-                margin-left: 360px;
+                margin-left: 350px;
             }
             @media all and (max-width: 1200px) {
-                margin-left: 270px;
+                margin-left: 260px;
             }
             @media all and (max-width: 768px) {
                 margin-left: 0;
+            }
+        }
+        .slither-enter-active,
+        .slither-leave-active {
+            transition: transform 0.5s;
+        }
+        .slither-enter,
+        .slither-leave-to {
+            transform: scaleX(0);
+            transform-origin: 0%;
+            div{
+                opacity:0;
+            }
+        }
+        .slither-enter-to,
+        .slither-leave {
+            transform: scaleX(1);
+            transform-origin: 0%;
+            div{
+                opacity:1;
             }
         }
     }
