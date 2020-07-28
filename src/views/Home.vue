@@ -41,7 +41,7 @@
             </icon-base>
           </header>
           <h3 class="skill__title">{{skill.name}}</h3>
-          <p class="skill__content">{{skill.content}}</p>
+          <p v-html="skill.content" class="skill__content"></p>
         </article>
       </div>
     </section>
@@ -54,6 +54,7 @@ import IconCode from '../components/icons/IconCode'
 import IconSeo from '../components/icons/IconSeo'
 import IconDb from '../components/icons/IconDb'
 import IconSecu from '../components/icons/IconSecu'
+
 export default {
   name: 'Home',
   components: {
@@ -70,25 +71,25 @@ export default {
           header: 'IconCode',
           name: 'webDev',
           content:
-            'Développer une application web répondant aux standards actuels.'
+            '<strong>Développer</strong> une application web répondant aux standards actuels.'
         },
         {
           header: 'iconSeo',
           name: 'SEO',
           content:
-            'Optimiser une application pour améliorer son référencement.'
+            'Optimiser une application pour améliorer son <strong>référencement</strong>.'
         },
         {
           header: 'iconDb',
           name: 'base de données',
           content:
-            'Création d\'API et mise en place d\'une base de donnée'
+            'Création d\'<strong>API</strong> et mise en place d\'une <strong>base de donnée</strong>'
         },
         {
           header: 'iconSecu',
           name: 'sécurité',
           content:
-            'Sensibilisé à la sécurité des données et à la protection des utilisateurs sur le Web. Prise en compte des recommandations de l\'OWASP et du RGPD'
+            'Sensibilisé à la sécurité des données et à la protection des utilisateurs sur le Web. Prise en compte des recommandations de l\'<strong>OWASP</strong> et du <strong>RGPD</strong>'
         }
       ]
     }

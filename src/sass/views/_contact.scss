@@ -1,11 +1,41 @@
 .contact {
+    position: relative;
     &__header {
-        position: relative;
         padding-bottom: 1rem;
-
         &__title {
             margin-top: 0;
             margin-bottom: 25px;
+        }
+    }
+    &__content {
+        overflow: hidden;
+        &__map {
+            width: 650px;
+            height: 300px;
+        }
+        &__list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            li{
+                display: flex;
+                margin-top: 1rem;
+                span{
+                    line-height: 1.8rem;
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background-color: white;
+            opacity: 0.09;
         }
     }
 }

@@ -11,4 +11,22 @@
             font-size: 18px;
         }
     }
+    &__content {
+        &__list {
+            li {
+                color: #04b176;
+                font-family: "robotoregular", Arial, Helvetica, sans-serif;
+                span {
+                    color: white;
+                    line-height: 1.8rem;
+                    margin-left: 0.5rem;
+                    a {
+                        &:hover {
+                            color: #04b176;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
