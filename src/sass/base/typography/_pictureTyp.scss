@@ -1,15 +1,17 @@
 .picCard {
     &__info {
         font-family: "robotobold", Arial, Helvetica, sans-serif;
-        h2 {
+        h1 {
             color: white;
             font-size: 54px;
+            text-shadow:  black 0.1em 0.1em 0.2em;
             @media all and (max-width: 992px) {
                font-size: 48px;
             }
         }
         div {
             color: #04b176;
+            text-shadow:  black 0.1em 0.1em 0.2em;
             font-size: 18px;
         }
     }

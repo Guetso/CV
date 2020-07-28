@@ -1,8 +1,8 @@
 .home {
     &__header {
         position: relative;
-        padding-bottom: 2rem;
-    
+        padding-bottom: 1rem;
+
         &__title {
             margin-top: 0;
             margin-bottom: 25px;
@@ -18,23 +18,34 @@
             opacity: 0.09;
         }
     }
-    &__skills{
+    &__skills {
         display: flex;
         flex-direction: column;
-        .container{
+        &__title {
+            margin-top: 1rem;
+        }
+        .container {
             display: flex;
             flex-wrap: wrap;
-            .skill{
+            .skill {
+                display: flex;
+                flex-direction: column;
                 max-width: 50%;
-                margin-bottom: 2rem;
                 box-sizing: border-box;
                 padding: 0 1rem;
-                &__header{
+                margin-bottom: 1rem;
+                &__header {
                     color: #04b176;
                 }
-                &__title{
+                &__title {
+                    margin-bottom: 0;
                     margin-top: 0.5rem;
                     max-height: 3rem;
+                }
+                @media all and (max-width: 576px) {
+                    &__content {
+                        padding-top: 1rem;
+                    }
                 }
             }
         }

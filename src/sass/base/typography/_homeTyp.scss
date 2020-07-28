@@ -21,6 +21,9 @@
             font-size: 15px;
             line-height: 25.95px;
             text-align: left;
+            &--strong {
+                font-weight: 800;
+            }
         }
     }
     &__skills {
@@ -41,5 +44,8 @@
                 }
             }
         }
+    }
+    a{
+        color:#04b176 ;
     }
 }

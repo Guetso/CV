@@ -2,13 +2,15 @@
   <div class="picCard">
     <span class="picCard__alt">myPicture</span>
     <div class="picCard__info">
-      <h2>George Abitbol</h2>
+      <h1>Hugo Hémon</h1>
       <div>Développeur web junior</div>
       <ul class="picture__items">
         <li class="picture__item" v-for="item in itemsPic" :key="item.name">
+          <a :href="item.link" target="__blank">
           <icon-base :width="25" :height="25" :icon-name="item.name">
             <component :is="item.icon" />
           </icon-base>
+          </a>
         </li>
       </ul>
     </div>
@@ -29,8 +31,8 @@ export default {
   data: function () {
     return {
       itemsPic: [
-        { name: 'linkedin', icon: 'IconLinkedin' },
-        { name: 'github', icon: 'IconGithub' }
+        { name: 'linkedin', icon: 'IconLinkedin', link: 'https://www.linkedin.com/in/hugo-hémon-a03b69168' },
+        { name: 'github', icon: 'IconGithub', link: 'https://github.com/Guetso' }
       ]
     }
   }

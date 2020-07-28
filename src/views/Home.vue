@@ -1,19 +1,33 @@
 <template>
   <div class="home">
     <header class="home__header">
-      <h1 class="home__header__title">à propos de moi</h1>
+      <h2 class="home__header__title">à propos de moi</h2>
 
       <aside class="home__header__aside">
-        68 ans
-        <span>/</span> Texase
+        32 ans
+        <span>/</span> Finistère
         <span>/</span> En recherche d'alternance
       </aside>
 
       <p class="home__header__content">
-        Suite à une formation en marketing, puis en gestion et comptabilité, j'ai travaillé en tant que collaborateur comptable au sein d'un cabinet d'expertise Quimpér. Après plusieurs années à ce poste j'ai souhaité me reconvertir et revenir à mes premières aspirations : l'informatique et le web.
-        <br />J'ai validé avec succès la formation
-        <em>"Développeur Web"</em> dispensée par le site de formation en ligne OpenClassrooms, et me lance aujourd'hui en tant que développeur web freelance.
-        <br />Fort de mes compétences en développement, couplées à mes connaissances du monde de l'entreprise je suis capable d'offrir des solutions adaptées aux besoins de mes clients.
+        Suite à une formation en marketing, puis en gestion et comptabilité, j'ai travaillé en tant que collaborateur comptable au sein d'un cabinet d'expertise Quimpérois.
+        <br />Après plusieurs années à ce poste j'ai souhaité me reconvertir et revenir à mes premières aspirations : l'informatique et le web.
+      </p>
+      <p class="home__header__content">
+        J'ai validé avec succès la formation
+        <a
+          href="https://openclassrooms.com/fr/paths/185-developpeur-web"
+          target="__blank"
+        >Développeur Web</a> dispensée par le site de formation en ligne OpenClassrooms.
+        <br />Après avoir acquis les bases du développement web, mon objectif est désormais d'acquerir de nouvelles connaissances et de monter en compétences.
+      </p>
+      <p class="home__header__content home__header__content--strong">
+        Je suis donc à la recherche d'un
+        <strong>contrat en alternance</strong> dans le cadre de la formation
+        <a
+          href="https://openclassrooms.com/fr/paths/59-developpeur-dapplication-php-symfony"
+          target="__blank"
+        >PHP/Symofny</a> d'OpenClassrooms.
       </p>
     </header>
 
@@ -54,27 +68,27 @@ export default {
       skills: [
         {
           header: 'IconCode',
-          name: 'développement',
+          name: 'webDev',
           content:
-            'Building a custom tailored solution based on your technical specification.'
+            'Développer une application web répondant aux standards actuels.'
         },
         {
           header: 'iconSeo',
           name: 'SEO',
           content:
-            'Audit your website, perform technical improvements and write meta tags.'
+            'Optimiser une application pour améliorer son référencement.'
         },
         {
           header: 'iconDb',
           name: 'base de données',
           content:
-            'Building a custom tailored solution based on your technical specification.'
+            'Création d\'API et mise en place d\'une base de donnée'
         },
         {
           header: 'iconSecu',
-          name: 'protection des données',
+          name: 'sécurité',
           content:
-            'Strategy with leading data protection technology to safeguard your critical data.'
+            'Sensibilisé à la sécurité des données et à la protection des utilisateurs sur le Web. Prise en compte des recommandations de l\'OWASP et du RGPD'
         }
       ]
     }

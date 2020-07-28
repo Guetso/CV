@@ -1,83 +1,25 @@
 <template>
   <div class="contact">
-    <header class="home__header">
-      <h1 class="home__header__title">Contact</h1>
-
-      <aside class="home__header__aside">
-        68 ans
-        <span>/</span> Texase
-        <span>/</span> En recherche d'alternance
-      </aside>
-
-      <p class="home__header__content">
-        Suite à une formation en marketing, puis en gestion et comptabilité, je fus embauché en tant que collaborateur comptable au sein d'un cabinet d'expertise comptable. Après plusieurs années à ce poste j'ai souhaité me reconvertir et revenir à mes premières aspirations : l'informatique et le web.
-        <br />J'ai validé avec succès la formation
-        <em>"Développeur Web"</em> dispensée par le site de formation en ligne OpenClassrooms, et me lance aujourd'hui en tant que développeur web freelance.
-        <br />Fort de mes compétences en développement, couplées à mes connaissances du monde de l'entreprise je suis capable d'offrir des solutions adaptées aux besoins de mes clients.
-      </p>
+    <header class=contact__header>
+      <h2 class=contact__header__title>contact</h2>
+      <p class=contact__header__aside>Pour me contacter:</p>
     </header>
-
-    <section class="home__skills">
-      <h2 class="home__skills__title">compétences</h2>
-      <div class="container">
-        <article class="skill" v-for="skill in skills" :key="skill.name">
-          <header class="skill__header">
-            <icon-base :width="30" :height="30" :icon-name="skill.name">
-              <component :is="skill.header" />
-            </icon-base>
-          </header>
-          <h3 class="skill__title">{{skill.name}}</h3>
-          <p class="skill__content">{{skill.content}}</p>
-        </article>
-      </div>
-    </section>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d143798.93055238595!2d-3.9574863000847027!3d47.956113436282706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1595942268364!5m2!1sfr!2sfr"
+      width="425"
+      height="280"
+      frameborder="0"
+      style="border:0;"
+      allowfullscreen
+      aria-hidden="false"
+      tabindex="0"
+    ></iframe>
   </div>
 </template>
 
 <script>
-import IconBase from '@/components/IconBase.vue'
-import IconCode from '../components/icons/IconCode'
-import IconSeo from '../components/icons/IconSeo'
-import IconDb from '../components/icons/IconDb'
-import IconSecu from '../components/icons/IconSecu'
 export default {
   name: 'Contact',
-  components: {
-    IconBase,
-    IconCode,
-    IconSeo,
-    IconDb,
-    IconSecu
-  },
-  data: function () {
-    return {
-      skills: [
-        {
-          header: 'IconCode',
-          name: 'développement',
-          content:
-            'Building a custom tailored solution based on your technical specification.'
-        },
-        {
-          header: 'iconSeo',
-          name: 'SEO',
-          content:
-            'Audit your website, perform technical improvements and write meta tags.'
-        },
-        {
-          header: 'iconDb',
-          name: 'base de données',
-          content:
-            'Building a custom tailored solution based on your technical specification.'
-        },
-        {
-          header: 'iconSecu',
-          name: 'protection des données',
-          content:
-            'Strategy with leading data protection technology to safeguard your critical data.'
-        }
-      ]
-    }
-  }
+  components: {}
 }
 </script>
