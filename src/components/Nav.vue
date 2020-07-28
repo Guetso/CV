@@ -7,8 +7,17 @@
     </div>
     <nav>
       <ul class="navBar__items">
-        <router-link tag="li" class="navBar__item" exact-active-class="navBar__item--isActive" :to="{ name: item.name }" v-for="item in $router.options.routes" :key="item.meta.icon.name">
-          <icon-base width= "30" height="30" :icon-name="item.meta.icon.name">
+        <audio preload="auto" ref="audioElm" src="../assets/click.mp3"></audio>
+        <router-link
+          tag="li"
+          class="navBar__item"
+          exact-active-class="navBar__item--isActive"
+          :to="{ name: item.name }"
+          v-for="item in $router.options.routes"
+          :key="item.meta.icon.name"
+          @click.native="play"
+        >
+          <icon-base width="30" height="30" :icon-name="item.meta.icon.name">
             <component :is="item.meta.icon.component" />
           </icon-base>
         </router-link>
@@ -37,7 +46,11 @@ export default {
     IconAbout
   },
   data: function () {
-    return {
+    return {}
+  },
+  methods: {
+    play: function (event) {
+      this.$refs.audioElm.play()
     }
   }
 }
