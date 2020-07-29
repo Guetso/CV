@@ -1,10 +1,11 @@
 .home {
+    padding-left: 2rem;
     &__header {
         position: relative;
         padding-bottom: 1rem;
 
         &__title {
-            margin-top: 0;
+            margin-top: 2rem;
             margin-bottom: 25px;
         }
         &::after {

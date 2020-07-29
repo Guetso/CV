@@ -11,9 +11,12 @@ body {
     #app {
         display: flex;
         position: relative;
-        max-width: 75vw;
+        max-width: 65vw;
         height: 85vh;
         transition: ease-in-out 200ms;
+        @media all and (max-width: 1600px) {
+            min-width: 75vw;
+        }
         @media all and (max-width: 1400px) {
             min-width: 85vw;
         }

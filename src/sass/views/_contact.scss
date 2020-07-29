@@ -1,23 +1,30 @@
 .contact {
     position: relative;
+    padding-left: 2rem;
+    padding-right: 2rem;
     &__header {
         padding-bottom: 1rem;
         &__title {
-            margin-top: 0;
+            margin-top: 2rem;
             margin-bottom: 25px;
         }
     }
     &__content {
-        overflow: hidden;
         &__map {
-            width: 650px;
-            height: 300px;
+            display: flex;
+            border: solid 5px white;
+            @media all and (max-width: 576px) {
+               
+                overflow: hidden;
+            }
         }
         &__list {
             list-style: none;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
+            padding: 1rem;
+            align-items: center;
             li{
                 display: flex;
                 margin-top: 1rem;

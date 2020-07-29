@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <header class="home__header">
-      <h2 class="home__header__title">à propos de moi</h2>
+      <h2 class="home__header__title"> &Agrave; propos</h2>
 
       <aside class="home__header__aside">
         32 ans
@@ -32,7 +32,7 @@
     </header>
 
     <section class="home__skills">
-      <h2 class="home__skills__title">compétences</h2>
+      <h2 class="home__skills__title">Compétences</h2>
       <div class="container">
         <article class="skill" v-for="skill in skills" :key="skill.name">
           <header class="skill__header">
@@ -69,7 +69,7 @@ export default {
       skills: [
         {
           header: 'IconCode',
-          name: 'webDev',
+          name: 'WebDev',
           content:
             '<strong>Développer</strong> une application web répondant aux standards actuels.'
         },
@@ -81,13 +81,13 @@ export default {
         },
         {
           header: 'iconDb',
-          name: 'base de données',
+          name: 'Base de données',
           content:
             'Création d\'<strong>API</strong> et mise en place d\'une <strong>base de donnée</strong>'
         },
         {
           header: 'iconSecu',
-          name: 'sécurité',
+          name: 'Sécurité',
           content:
             'Sensibilisé à la sécurité des données et à la protection des utilisateurs sur le Web. Prise en compte des recommandations de l\'<strong>OWASP</strong> et du <strong>RGPD</strong>'
         }

@@ -1,0 +1,16 @@
+.portfolio {
+    &__header {
+        &__title {
+            color: white;
+            font-family: "robotobold", Arial, Helvetica, sans-serif;
+            font-size: 52px;
+        }
+    }
+    &__content {
+        &__disclaimer {
+            color: #04b176;
+            font-family: "robotomedium_italic", Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+    }
+}
