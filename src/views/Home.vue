@@ -27,7 +27,7 @@
         <a
           href="https://openclassrooms.com/fr/paths/59-developpeur-dapplication-php-symfony"
           target="__blank"
-        >PHP/Symofny</a> d'OpenClassrooms.
+        >PHP/Symfony</a> d'OpenClassrooms.
       </p>
     </header>
 
