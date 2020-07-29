@@ -3,11 +3,13 @@
 @import "./base/typography/homeTyp";
 @import "./base/typography/contactTyp";
 @import "./base/typography/portfolioTyp";
+@import "./base/typography/skillsTyp";
 @import "./base/app";
 @import "./base/scrollBarChrome";
 @import "./views/home";
 @import "./views/contact";
 @import "./views/portfolio";
+@import "./views/skills";
 @import "./components/nav";
 @import "./components/picture";
 @import "./components/cursor";

@@ -83,13 +83,13 @@ export default {
           header: 'iconDb',
           name: 'Base de données',
           content:
-            'Création d\'<strong>API</strong> et mise en place d\'une <strong>base de donnée</strong>'
+            'Création d\'<strong>API</strong> et mise en place d\'une <strong>base de données</strong>.'
         },
         {
           header: 'iconSecu',
           name: 'Sécurité',
           content:
-            'Sensibilisé à la sécurité des données et à la protection des utilisateurs sur le Web. Prise en compte des recommandations de l\'<strong>OWASP</strong> et du <strong>RGPD</strong>'
+            'Sensibilisé à la sécurité des données et à la protection des utilisateurs sur le Web. Prise en compte des recommandations de l\'<strong>OWASP</strong> et du <strong>RGPD</strong>.'
         }
       ]
     }

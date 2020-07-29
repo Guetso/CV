@@ -1,95 +1,65 @@
 <template>
-  <div class="home">
-    <header class="home__header">
-      <h2 class="home__header__title"> &Agrave; propos</h2>
-
-      <aside class="home__header__aside">
-        32 ans
-        <span>/</span> Finistère
-        <span>/</span> En recherche d'alternance
-      </aside>
-
-      <p class="home__header__content">
-        Suite à une formation en marketing, puis en gestion et comptabilité, j'ai travaillé en tant que collaborateur comptable au sein d'un cabinet d'expertise Quimpérois.
-        <br />Après plusieurs années à ce poste j'ai souhaité me reconvertir et revenir à mes premières aspirations : l'informatique et le web.
-      </p>
-      <p class="home__header__content">
-        J'ai validé avec succès la formation
-        <a
-          href="https://openclassrooms.com/fr/paths/185-developpeur-web"
-          target="__blank"
-        >Développeur Web</a> dispensée par le site de formation en ligne OpenClassrooms.
-        <br />Après avoir acquis les bases du développement web, mon objectif est désormais d'acquerir de nouvelles connaissances et de monter en compétences.
-      </p>
-      <p class="home__header__content home__header__content--strong">
-        Je suis donc à la recherche d'un
-        <strong>contrat en alternance</strong> dans le cadre de la formation
-        <a
-          href="https://openclassrooms.com/fr/paths/59-developpeur-dapplication-php-symfony"
-          target="__blank"
-        >PHP/Symfony</a> d'OpenClassrooms.
+  <div class="skills">
+    <header class="skills__header">
+      <p class="skills__header__p">
+        La formation "Développeur Web" m'a permis d'acquérir des bases de connaissances larges dans le domaine du developpement web.
+        <br />Ajouté à cela mon parcours initial qui me permet de cerner le contexte dans lequel se développe un projet et ainsi de pouvoir m'y adapter.
       </p>
     </header>
 
-    <section class="home__skills">
-      <h2 class="home__skills__title">Compétences</h2>
+    <section class="skills__techs">
+      <h2 class="skills__techs__title">
+        <icon-base :width="40" :height="40">
+          <component :is="title.icon" />
+        </icon-base>
+        <span>{{title.content}}</span>
+      </h2>
       <div class="container">
-        <article class="skill" v-for="skill in skills" :key="skill.name">
-          <header class="skill__header">
-            <icon-base :width="30" :height="30" :icon-name="skill.name">
-              <component :is="skill.header" />
-            </icon-base>
-          </header>
-          <h3 class="skill__title">{{skill.name}}</h3>
-          <p v-html="skill.content" class="skill__content"></p>
-        </article>
+        <article class="skill" v-for="skill in skills" :key="skill.name"></article>
       </div>
+      <ul v-for="item in techs" :key="item.name">
+        <li></li>
+      </ul>
     </section>
   </div>
 </template>
 
 <script>
 import IconBase from '@/components/IconBase.vue'
-import IconCode from '../components/icons/IconCode'
-import IconSeo from '../components/icons/IconSeo'
-import IconDb from '../components/icons/IconDb'
-import IconSecu from '../components/icons/IconSecu'
+import IconSkill from '../components/icons/IconSkill'
 
 export default {
-  name: 'Home',
+  name: 'Skills',
   components: {
     IconBase,
-    IconCode,
-    IconSeo,
-    IconDb,
-    IconSecu
+    IconSkill
   },
   data: function () {
     return {
-      skills: [
+      title: {
+        icon: 'IconSkill',
+        content: 'skills'
+      },
+      techs: [
         {
-          header: 'IconCode',
-          name: 'WebDev',
-          content:
-            '<strong>Développer</strong> une application web répondant aux standards actuels.'
+          name: 'html5',
+          icon: 'HtmlIcon'
         },
         {
-          header: 'iconSeo',
-          name: 'SEO',
-          content:
-            'Optimiser une application pour améliorer son <strong>référencement</strong>.'
+          name: 'css3',
+          icon: 'CssIcon'
         },
         {
-          header: 'iconDb',
-          name: 'Base de données',
-          content:
-            'Création d\'<strong>API</strong> et mise en place d\'une <strong>base de donnée</strong>'
+          name: 'javascript',
+          icon: 'JsIcon'
         },
         {
-          header: 'iconSecu',
-          name: 'Sécurité',
-          content:
-            'Sensibilisé à la sécurité des données et à la protection des utilisateurs sur le Web. Prise en compte des recommandations de l\'<strong>OWASP</strong> et du <strong>RGPD</strong>'
+          name: 'mySql',
+          icon: 'MySqlIcon'
+        },
+        {
+          name: 'git',
+          icon: 'GitIcon'
         }
       ]
     }
