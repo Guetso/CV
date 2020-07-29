@@ -16,7 +16,7 @@ const routes = [
     meta: {
       icon: {
         component: aboutIcon,
-        name: 'home'
+        name: 'about'
       }
     }
   },

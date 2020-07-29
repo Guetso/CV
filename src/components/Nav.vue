@@ -1,8 +1,8 @@
 <template>
   <div class="navBar">
     <div class="navBar__upBtn">
-      <icon-base width="30" height="30" icon-name="menu">
-        <icon-menu />
+      <icon-base width="30" height="30" icon-name="soon..." >
+        <icon-menu title="soon..." />
       </icon-base>
     </div>
     <nav>
@@ -23,11 +23,13 @@
         </router-link>
       </ul>
     </nav>
-    <button class="navBar__downBtn">
-      <icon-base width="40" height="40" icon-name="cloud" iconColor="#04b176">
-        <icon-cloud />
-      </icon-base>
-    </button>
+    <a href="cv.pdf" target="_blank">
+      <button class="navBar__downBtn">
+        <icon-base width="40" height="40" icon-name="download" iconColor="#04b176">
+          <icon-cloud />
+        </icon-base>
+      </button>
+    </a>
   </div>
 </template>
 

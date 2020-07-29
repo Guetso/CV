@@ -5,7 +5,7 @@
     </header>
     <div class="portfolio__content">
       <Animation></Animation>
-      <p class="portfolio__content__disclaimer">En cours de réalisation...</p>
+      <p class="portfolio__content__disclaimer">En cours de réalisation... En attendant, n'hésitez pas à visiter mon <a href="https://github.com/Guetso">Github </a>!</p>
     </div>
   </div>
 </template>
