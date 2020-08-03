@@ -13,6 +13,9 @@
     }
     &__content {
         &__list {
+            @media all and (max-width: 576px) {
+                font-size: 14px;
+            }
             li {
                 color: #04b176;
                 font-family: "robotoregular", Arial, Helvetica, sans-serif;

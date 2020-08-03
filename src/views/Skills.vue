@@ -3,7 +3,7 @@
     <header class="skills__header">
       <p class="skills__header__p">
         La formation "Développeur Web" m'a permis d'acquérir des bases de connaissances larges dans le domaine du developpement web.
-        <br />Ajouté à cela mon parcours initial qui me permet de cerner le contexte dans lequel se développe un projet et ainsi de pouvoir m'y adapter.
+        <br />Ajouté à cela mon parcours initial en gestion qui me permet de cerner le contexte dans lequel se développe un projet et ainsi de pouvoir m'y adapter.
       </p>
     </header>
 

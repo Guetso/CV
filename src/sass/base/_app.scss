@@ -35,6 +35,9 @@ body {
         .main {
             margin-left: 470px;
             padding: 1rem;
+            @media all and (max-width: 576px) {
+                padding: 0;
+            }
             overflow-y: scroll;
             scrollbar-width: thin;
             scrollbar-color: #3c3e3f #1c1e1f;
