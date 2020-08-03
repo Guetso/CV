@@ -35,7 +35,7 @@
                 display: flex;
                 margin: 1rem;
                 width: 30%;
-                flex-grow: 1;
+                flex-basis: 30%;
                 span {
                     display: inline-block;
                     margin-left: 2rem;
@@ -53,7 +53,8 @@
             opacity: 0.09;
         }
     }
-    &__educations {
+    &__educations,
+    &__experiences {
         position: relative;
         padding-bottom: 1rem;
         &__title {
@@ -68,6 +69,7 @@
             li {
                 display: flex;
                 flex-direction: column;
+                margin-top: 1rem;
             }
             &__year {
                 margin-bottom: 0.5rem;
@@ -78,6 +80,19 @@
             &__town {
                 margin: 0.5rem 0;
             }
+            &__content {
+                margin-top: 0;
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background-color: white;
+            opacity: 0.09;
         }
     }
 }

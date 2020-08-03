@@ -29,7 +29,7 @@
             }
         }
     }
-    &__educations {
+    &__educations, &__experiences {
         &__title {
             font-size: 30px;
             font-family: "robotobold", Arial, Helvetica, sans-serif;
@@ -60,6 +60,12 @@
                 font-family: "robotoregular", Arial, Helvetica, sans-serif;
                 font-size: 13px;
                 color: #555555;
+            }
+            &__content {
+                font-family: "robotoregular", Arial, Helvetica, sans-serif;
+                color: #888888;
+                font-size: 15px;
+                line-height: 1.6rem;
             }
         }
     }
