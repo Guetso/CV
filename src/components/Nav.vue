@@ -25,7 +25,7 @@
     </nav>
     <a href="cv.pdf" target="_blank">
       <button class="navBar__downBtn">
-        <icon-base width="40" height="40" icon-name="download" iconColor="#04b176">
+        <icon-base width="35" height="35" icon-name="download" iconColor="#04b176">
           <icon-cloud />
         </icon-base>
       </button>

@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <header class="home__header">
+      <Picture altClass="--mobile"></Picture>
       <h2 class="home__header__title"> &Agrave; propos</h2>
 
       <aside class="home__header__aside">
@@ -49,6 +50,7 @@
 </template>
 
 <script>
+import Picture from '@/components/Picture.vue'
 import IconBase from '@/components/IconBase.vue'
 import IconCode from '../components/icons/IconCode'
 import IconSeo from '../components/icons/IconSeo'
@@ -58,6 +60,7 @@ import IconSecu from '../components/icons/IconSecu'
 export default {
   name: 'Home',
   components: {
+    Picture,
     IconBase,
     IconCode,
     IconSeo,

@@ -1,11 +1,11 @@
 <template>
-  <div class="picCard">
-    <span class="picCard__alt">myPicture</span>
-    <div class="picCard__info">
+  <div :class="['picCard', 'picCard'+ altClass]">
+    <span :class="['picCard__alt', 'picCard__alt'+ altClass]">myPicture</span>
+    <div :class="['picCard__info', 'picCard__info'+ altClass]">
       <h1>Hugo Hémon</h1>
       <div>Développeur web junior</div>
-      <ul class="picture__items">
-        <li class="picture__item" v-for="item in itemsPic" :key="item.name">
+      <ul :class="['picture__items', 'picture__items'+ altClass]">
+        <li :class="['picture__item', 'picture__item'+ altClass]" v-for="item in itemsPic" :key="item.name">
           <a :href="item.link" target="__blank">
           <icon-base :width="25" :height="25" :icon-name="item.name">
             <component :is="item.icon" />
@@ -27,6 +27,9 @@ export default {
     IconBase,
     IconLinkedin,
     IconGithub
+  },
+  props: {
+    altClass: String
   },
   data: function () {
     return {

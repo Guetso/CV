@@ -4,6 +4,9 @@
             color: white;
             font-family: "robotobold", Arial, Helvetica, sans-serif;
             font-size: 52px;
+            @media all and (max-width: 768px) {
+                    font-size: 36px;
+            }
         }
         &__aside {
             color: #04b176;
@@ -44,8 +47,5 @@
                 }
             }
         }
-    }
-    a{
-        color:#04b176 ;
     }
 }

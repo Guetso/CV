@@ -14,21 +14,46 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    @media all and (min-width: 1400px) {
+        &--mobile {
+            display: none;
+        }
+    }
     @media all and (max-width: 1400px) {
         width: 350px;
+        &--mobile {
+            display: none;
+        }
     }
     @media all and (max-width: 1200px) {
         width: 260px;
+        &--mobile {
+            display: none;
+        }
     }
     @media all and (max-width: 768px) {
         display: none;
+        &--mobile {
+            display: block;
+            position: static;
+            background: none;
+            height: auto;
+            width: 100%;
+            margin: auto;
+        }
     }
     &__alt {
         color: white;
         z-index: -1;
+        &--mobile {
+            display: none;
+        }
     }
     &__info {
         margin-top: 10rem;
+        &--mobile {
+            margin-top: 1rem;
+        }
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -43,16 +68,16 @@
             display: flex;
             list-style: none;
             padding: 0;
-            margin:0;
-            li{
+            margin: 0;
+            li {
                 color: white;
-                margin:0 1rem 0 1rem;
-                &:hover{
+                margin: 0 1rem 0 1rem;
+                &:hover {
                     color: #04b176;
                 }
             }
         }
-        .picture__item{
+        .picture__item {
             margin-left: 2rem;
             cursor: pointer;
         }
