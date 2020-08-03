@@ -16,11 +16,67 @@
         }
     }
     &__techs {
+        position: relative;
+        padding-bottom: 1rem;
         &__title {
             display: flex;
             :first-child {
                 color: #04b176;
                 margin-right: 0.8rem;
+            }
+        }
+        &__list {
+            list-style: none;
+            color: #04b176;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            li {
+                display: flex;
+                margin: 1rem;
+                width: 30%;
+                flex-grow: 1;
+                span {
+                    display: inline-block;
+                    margin-left: 2rem;
+                }
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background-color: white;
+            opacity: 0.09;
+        }
+    }
+    &__educations {
+        position: relative;
+        padding-bottom: 1rem;
+        &__title {
+            display: flex;
+            :first-child {
+                color: #04b176;
+                margin-right: 0.8rem;
+            }
+        }
+        &__list {
+            list-style: none;
+            li {
+                display: flex;
+                flex-direction: column;
+            }
+            &__year {
+                margin-bottom: 0.5rem;
+            }
+            &__title {
+                margin: 0;
+            }
+            &__town {
+                margin: 0.5rem 0;
             }
         }
     }

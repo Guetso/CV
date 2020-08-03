@@ -17,5 +17,50 @@
                 line-height: 2.5rem;
             }
         }
+        &__list {
+            li {
+                text-align: center;
+                span {
+                    color: white;
+                    font-family: "robotobold", Arial, Helvetica, sans-serif;
+                    line-height: 2.5rem;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+    &__educations {
+        &__title {
+            font-size: 30px;
+            font-family: "robotobold", Arial, Helvetica, sans-serif;
+            span {
+                color: white;
+                line-height: 2.5rem;
+            }
+        }
+        &__list {
+            &__year {
+                font-family: "robotoregular", Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                font-weight: 800;
+                color:#04b176;
+                line-height: 18px;
+                letter-spacing: 1px;
+            }
+            &__title {
+                font-family: "robotobold", Arial, Helvetica, sans-serif;
+                color: white;
+            }
+            &__degree {
+                font-family: "robotoregular", Arial, Helvetica, sans-serif;
+                color: white;
+                font-style: italic;
+            }
+            &__town {
+                font-family: "robotoregular", Arial, Helvetica, sans-serif;
+                font-size: 13px;
+                color: #555555;
+            }
+        }
     }
 }
